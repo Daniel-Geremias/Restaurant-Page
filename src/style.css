@@ -1,25 +1,87 @@
 body {
     margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
 }
 
 #content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('./imgs/BG.jpg') center no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: center;
 }
 
 .header {
+    background-color: rgba(0, 0, 0, .8);
+    margin: 0px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.nav-bar {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn {
+    background-color:  black;
+    width: 120px;
+    height: 50px;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.nav-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+.active:hover {
+    cursor: default;
+}
+
+.header h1 {
+    font-size: 38px;
+}
+
 .main {
+    background-color: rgba(0, 0, 0, .8);
+    height: 100vh;
+    max-width: 900px;
+    margin: 0px 50px;
+    padding: 25px;
     display: flex;
     justify-content: center;
 }
 
 .footer {
+    background-color: #333333;
     display: flex;
     justify-content: center;
+    padding: 26px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    color: #e0e0e0;
 }
